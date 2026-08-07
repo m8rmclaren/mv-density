@@ -18,24 +18,25 @@ export default function Home() {
                 className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(60%_45%_at_50%_0%,var(--accent),transparent_70%)]"
             />
 
+            {/* ---------- Top banner ---------- */}
+            <div className="border-b border-border bg-primary/10">
+                <div className="mx-auto flex w-full max-w-3xl flex-col items-center justify-between gap-2 px-6 py-3 text-center sm:flex-row sm:text-left">
+                    <p className="inline-flex items-center gap-2 text-sm font-medium text-foreground">
+                        <Signpost className="size-4 shrink-0 text-primary" strokeWidth={2} />
+                        As new information becomes available, we’ll post updates here. Check back often.
+                    </p>
+                </div>
+            </div>
+
             {/* ---------- Hero ---------- */}
             <section className="flex flex-col items-center px-6 pt-16 pb-14 text-center sm:pt-24">
-                <div className="mb-8 flex size-14 items-center justify-center rounded-2xl border border-border bg-card shadow-sm">
-                    <TreePine className="size-7 text-primary" strokeWidth={1.5} />
-                </div>
-
-                <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-3.5 py-1.5 text-xs font-medium tracking-wide text-muted-foreground uppercase">
-                    <span className="size-1.5 rounded-full bg-primary" />
-                    Willow Springs Neighborhood
-                </span>
-
                 <h1 className="max-w-3xl text-balance text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl">
-                    Keep our valley at one home per acre
+                    Keep Willow Springs at one home per acre
                 </h1>
 
                 <p className="mt-5 max-w-xl text-balance text-lg leading-relaxed text-muted-foreground">
                     The proposed <strong>Mountain Village</strong> development would be
-                    <strong> twice as dense</strong> as Jefferson County&rsquo;s Long
+                    <strong> twice as dense</strong> &nbsp; as Jefferson County&rsquo;s Long
                     Range Plan allows. We&rsquo;re not against development;
                     we&rsquo;re for development that follows the plan our valley has always
                     been held to.
@@ -177,6 +178,27 @@ export default function Home() {
             </section>
 
             {/* ---------- Lawn sign ---------- */}
+            <LawnSign />
+
+            <footer className="border-t border-border px-6 py-8">
+                <p className="text-center text-xs text-muted-foreground">
+                    &copy; {new Date().getFullYear()} &nbsp; Willow Springs HOA &nbsp;&middot;&nbsp;
+                    Questions?{" "}
+                    <a
+                        href="mailto:mark@mradlauer.com"
+                        className="font-medium text-foreground underline-offset-4 hover:underline"
+                    >
+                        mark@mradlauer.com
+                    </a>
+                </p>
+            </footer>
+        </div>
+    );
+}
+
+function LawnSign() {
+    return (
+        <>
             <section id="lawn-sign" className="scroll-mt-8 px-6 py-16">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-start gap-6 rounded-3xl border border-border bg-card px-8 py-10 sm:flex-row sm:items-center sm:justify-between">
                     <div className="max-w-md">
@@ -211,21 +233,9 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+        </>
 
-            <footer className="border-t border-border px-6 py-8">
-                <p className="text-center text-xs text-muted-foreground">
-                    &copy; {new Date().getFullYear()} &nbsp; Willow Springs HOA &nbsp;&middot;&nbsp;
-                    Questions?{" "}
-                    <a
-                        href="mailto:mark@mradlauer.com"
-                        className="font-medium text-foreground underline-offset-4 hover:underline"
-                    >
-                        mark@mradlauer.com
-                    </a>
-                </p>
-            </footer>
-        </div>
-    );
+    )
 }
 
 function Point({
