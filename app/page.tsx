@@ -37,7 +37,9 @@ export default function Home() {
                 <p className="mt-5 max-w-xl text-balance text-lg leading-relaxed text-muted-foreground">
                     The proposed <strong>Mountain Village</strong> development would be
                     <strong> twice as dense</strong> &nbsp; as Jefferson County&rsquo;s Long
-                    Range Plan allows. We&rsquo;re not against development;
+                    Range Plan specifies in The Valley.
+
+                    We&rsquo;re not against development;
                     we&rsquo;re for development that follows the plan our valley has always
                     been held to.
                 </p>
@@ -133,6 +135,18 @@ export default function Home() {
                         Commission and from the community before they decide, which is why
                         showing up and speaking up makes a real difference.
                     </p>
+
+                    <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                        The Board of County Commissioners meeting will be in early September; more updates to follow.
+
+                    </p>
+                    <a
+                        href="#meetings"
+                        className="mt-4 inline-flex h-11 items-center justify-center gap-2"
+                    >
+                        See upcoming meetings
+                        <ArrowRight className="size-4" strokeWidth={2} />
+                    </a>
                 </div>
             </section>
 
@@ -210,8 +224,7 @@ function LawnSign() {
                         </h2>
                         <p className="mt-3 text-base leading-relaxed text-muted-foreground">
                             Show where our community stands. Signs are free to any Willow
-                            Springs community member; contact AMA and one will be
-                            provided to you.
+                            Springs community member. Contact AMA and we&rsquo;ll give you one.
                         </p>
                     </div>
 
