@@ -19,11 +19,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://mvdensity.com"),
   title: "MV Density — Willow Springs Neighborhood",
   description:
-    "Neighbors opposed to proposed new development in the Willow Springs neighborhood. Content coming soon.",
+    "The proposed Mountain Village development is twice as dense as Jefferson County's Long Range Plan allows. Learn our position, upcoming meeting details, and how to get a lawn sign.",
   openGraph: {
     title: "MV Density — Willow Springs Neighborhood",
     description:
-      "Neighbors opposed to proposed new development in the Willow Springs neighborhood. Content coming soon.",
+      "The proposed Mountain Village development is twice as dense as Jefferson County's Long Range Plan allows. Learn our position, upcoming meetings, and how to get a lawn sign.",
     url: "https://mvdensity.com",
     siteName: "MV Density",
     type: "website",
