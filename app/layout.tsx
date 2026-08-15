@@ -18,13 +18,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://mvdensity.com"),
-    title: "MV Density — Willow Springs Neighborhood",
+    title: "MV Density: Willow Springs Neighborhood",
     description:
-        "The proposed Mountain Village development is twice as dense as Jefferson County's Long Range Plan allows. Learn our position, upcoming meeting details, and how to get a lawn sign.",
+        "The proposed Mountain Village development is 1.7 times as dense as Jefferson County's Long Range Plan allows. Learn our position, the September 1 decision, and how you can help.",
     openGraph: {
-        title: "MV Density — Willow Springs Neighborhood",
+        title: "MV Density: Willow Springs Neighborhood",
         description:
-            "The proposed Mountain Village development is twice as dense as Jefferson County's Long Range Plan allows. Learn our position, upcoming meetings, and how to get a lawn sign.",
+            "The proposed Mountain Village development is 1.7 times as dense as Jefferson County's Long Range Plan allows. Learn our position, the September 1 decision, and how you can help.",
         url: "https://mvdensity.com",
         siteName: "MV Density",
         type: "website",
