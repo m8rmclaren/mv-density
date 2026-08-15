@@ -225,7 +225,7 @@ export default function Home() {
                                             strokeWidth={1.5}
                                         />
                                     ),
-                                    text: "Tuesday, September 1 · 8:00 AM",
+                                    text: "Tuesday, September 1 · 9:00 AM",
                                 },
                                 {
                                     icon: (
