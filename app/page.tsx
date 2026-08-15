@@ -164,7 +164,7 @@ export default function Home() {
                     <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                         Officials answer to voters, and a real groundswell on density gives
                         a right-sized plan its best chance. If you have an opinion, what
-                        you do before <strong>September 1 at 8:00 AM</strong> matters.
+                        you do before <strong>September 1 at 9:00 AM</strong> matters.
                     </p>
                     <a
                         href="#take-action"
