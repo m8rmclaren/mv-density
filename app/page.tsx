@@ -198,7 +198,7 @@ export default function Home() {
                     </strong>
                     . Whoever owns this ground next inherits the entitlement and none of the
                     assurances. If the commitments are not written into the conditions, they
-                    disappear the day the property changes hands.
+                    disappear if the property changes hands.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                     This one is straightforward to fix, and the Board can fix it: put the fire
