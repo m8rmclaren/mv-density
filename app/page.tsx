@@ -374,10 +374,10 @@ export default function Home() {
                 <p className="mx-auto mt-6 w-full max-w-3xl border-t border-border pt-6 text-xs text-muted-foreground">
                     &copy; {new Date().getFullYear()} Willow Springs HOA &middot; Questions?{" "}
                     <a
-                        href="mailto:mark@mradlauer.com"
+                        href="mailto:admin@AMAcolorado.com"
                         className="font-medium text-foreground underline-offset-4 hover:underline"
                     >
-                        mark@mradlauer.com
+                        admin@AMAcolorado.com
                     </a>
                 </p>
             </footer>
