@@ -1,30 +1,35 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Archivo, IBM_Plex_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/next"
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
+// Archivo carries the headlines and the big figures: a signage grotesque, which
+// is the register of a posted county standard rather than a product landing page.
+const archivo = Archivo({
     subsets: ["latin"],
+    weight: ["600", "700"],
+    variable: "--font-display",
 });
 
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
+// Plex Mono for anything that reads as surveyed data: eyebrows, densities, dates.
+const plexMono = IBM_Plex_Mono({
     subsets: ["latin"],
+    weight: ["400", "500", "600"],
+    variable: "--font-plex-mono",
 });
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://mvdensity.com"),
     title: "MV Density: Willow Springs Neighborhood",
     description:
-        "The proposed Mountain Village development is 1.7 times as dense as Jefferson County's Long Range Plan allows. Learn our position, the September 1 decision, and how you can help.",
+        "Jefferson County's Long Range Plan allows about 85 homes on the Mountain Village site. The application asks for 143. Here is the case, and how to reach the commissioners before the September 1 vote.",
     openGraph: {
         title: "MV Density: Willow Springs Neighborhood",
         description:
-            "The proposed Mountain Village development is 1.7 times as dense as Jefferson County's Long Range Plan allows. Learn our position, the September 1 decision, and how you can help.",
+            "Jefferson County's Long Range Plan allows about 85 homes on the Mountain Village site. The application asks for 143. Here is the case, and how to reach the commissioners before the September 1 vote.",
         url: "https://mvdensity.com",
         siteName: "MV Density",
         type: "website",
@@ -39,7 +44,14 @@ export default function RootLayout({
     return (
         <html
             lang="en"
-            className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
+            className={cn(
+                "h-full",
+                "antialiased",
+                "font-sans",
+                inter.variable,
+                archivo.variable,
+                plexMono.variable,
+            )}
         >
             <body className="min-h-full flex flex-col">
                 {children}
