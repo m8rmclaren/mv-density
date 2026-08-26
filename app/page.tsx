@@ -150,7 +150,7 @@ export default function Home() {
                             href="#meeting"
                             className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-border bg-card px-7 text-sm font-medium text-foreground transition-colors hover:bg-accent"
                         >
-                            Speak at the September 1 meeting
+                            Attend the September 1 meeting
                         </a>
                     </div>
                 </div>
@@ -317,7 +317,7 @@ export default function Home() {
                             <div className="flex items-center gap-3">
                                 <Users className="size-5 shrink-0 text-primary" strokeWidth={1.5} />
                                 <h3 className="font-display text-xl font-semibold tracking-tight text-foreground">
-                                    Speak at the Board meeting
+                                    Attend the Board meeting
                                 </h3>
                             </div>
 
